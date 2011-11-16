@@ -33,12 +33,12 @@ class AboutInheritance < EdgeCase::Koan
 
   def test_subcases_inherit_behavior_from_parent_class
     chico = Chihuahua.new("Chico")
-    assert_equal __, chico.name
+    assert_equal "Chico", chico.name
   end
 
   def test_subclasses_add_new_behavior
     chico = Chihuahua.new("Chico")
-    assert_equal __, chico.wag
+    assert_equal :happy, chico.wag
 
     assert_raise(___) do
       fido = Dog.new("Fido")
