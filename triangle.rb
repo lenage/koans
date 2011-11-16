@@ -14,19 +14,12 @@
 #   about_triangle_project_2.rb
 #
 def triangle(a, b, c)
-  begin
-    raise TriangleError.new("Oops")
-  rescue Exception => ex
-    if a == b && b == c
-      :equilateral
-    elsif a == b || b == c || c == a
-      :isosceles
-    else
-      :scalene
-    end
-  end
+  a, b, c = [a, b, c].sort
+  raise TriangleError if a <= 0 or a + b <= c
+  return :equilateral if a == c
+  return :isosceles if a == b or b == c
+  return :scalene
 end
-
 # Error class used in part 2.  No need to change this code.
 class TriangleError < StandardError
 end
