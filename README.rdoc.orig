@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 
      _________________
     < This is awesome >
@@ -8,6 +9,8 @@
                     ||----w |
                     ||     ||
 
+=======
+>>>>>>> Init commit
 = EdgeCase Ruby Koans
 
 The Ruby Koans walk you along the path to enlightenment in order to learn Ruby.
@@ -180,3 +183,6 @@ Requires       :: Ruby 1.8.x or later and Rake (any recent version)
                     ,::::::::::::::::::::              ::,,  , ,,  ,::::
                        ,::::::::::::::::              ::,, ,   ,:::,
                             ,::::                         , ,,
+                                                        ,,,
+=======
+>>>>>>> Init commit
