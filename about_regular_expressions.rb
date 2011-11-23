@@ -156,4 +156,12 @@ class AboutRegularExpressions < EdgeCase::Koan
   def test_gsub_is_like_find_and_replace_all
     assert_equal "one t-t", "one two-three".gsub(/(t\w*)/) { $1[0, 1] }
   end
+
+  def test_equal_return_a_fixnum
+    assert_equal Fixnum, ("one two-three" =~ /t/i).class
+  end
+
+  def test_macth_return_match_data
+    assert_equal MatchData, "one two-three".match(/t/i).class
+  end
 end
